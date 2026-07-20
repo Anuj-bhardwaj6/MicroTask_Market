@@ -1,0 +1,67 @@
+export default {
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        ink: {
+          50: "#f7f8f8",
+          100: "#ebeeee",
+          200: "#d7dddd",
+          300: "#b7c1c1",
+          400: "#8f9f9e",
+          500: "#70817f",
+          600: "#586966",
+          700: "#495653",
+          800: "#3f4947",
+          900: "#202826",
+          950: "#111715",
+        },
+        brand: {
+          50: "#effaf8",
+          100: "#d7f2ed",
+          200: "#afe6dd",
+          300: "#78d2c6",
+          400: "#3cb5a9",
+          500: "#22998f",
+          600: "#197b75",
+          700: "#17625e",
+          800: "#164f4c",
+          900: "#154240",
+        },
+        amberx: {
+          50: "#fff9ed",
+          100: "#fff0d0",
+          200: "#ffdfa1",
+          300: "#ffc766",
+          400: "#f9a72e",
+          500: "#ef8c11",
+          600: "#d36c0c",
+        },
+        coral: {
+          50: "#fff1ee",
+          100: "#ffded7",
+          300: "#ff9d8b",
+          500: "#f15e4a",
+          700: "#bf3324",
+        },
+      },
+      fontFamily: {
+        sans: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "sans-serif",
+        ],
+      },
+      boxShadow: {
+        soft: "0 14px 40px rgba(17, 23, 21, 0.08)",
+        line: "0 1px 0 rgba(17, 23, 21, 0.08)",
+      },
+    },
+  },
+  plugins: [],
+};

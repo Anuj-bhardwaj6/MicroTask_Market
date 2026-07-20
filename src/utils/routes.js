@@ -1,0 +1,60 @@
+import {
+  FiActivity,
+  FiBell,
+  FiBriefcase,
+  FiCheckCircle,
+  FiCreditCard,
+  FiGrid,
+  FiInbox,
+  FiMessageCircle,
+  FiPieChart,
+  FiPlusCircle,
+  FiSettings,
+  FiShield,
+  FiUser,
+  FiUsers,
+} from "react-icons/fi";
+
+export const roleHome = {
+  client: "/client/dashboard",
+  freelancer: "/freelancer/dashboard",
+  admin: "/admin/dashboard",
+};
+
+export const navByRole = {
+  client: [
+    { label: "Dashboard", to: "/client/dashboard", icon: FiGrid },
+    { label: "Post Task", to: "/client/post-task", icon: FiPlusCircle },
+    { label: "My Tasks", to: "/client/tasks", icon: FiBriefcase },
+    { label: "Applications", to: "/client/applications", icon: FiUsers },
+    { label: "Wallet", to: "/client/wallet", icon: FiCreditCard },
+    { label: "Messages", to: "/client/messages", icon: FiMessageCircle },
+    { label: "Notifications", to: "/client/notifications", icon: FiBell },
+    { label: "Profile", to: "/client/profile", icon: FiUser },
+    { label: "Settings", to: "/client/settings", icon: FiSettings },
+  ],
+  freelancer: [
+    { label: "Dashboard", to: "/freelancer/dashboard", icon: FiGrid },
+    { label: "Browse Tasks", to: "/freelancer/tasks", icon: FiInbox },
+    { label: "Applied Tasks", to: "/freelancer/applied", icon: FiCheckCircle },
+    { label: "Ongoing", to: "/freelancer/ongoing", icon: FiActivity },
+    { label: "Completed", to: "/freelancer/completed", icon: FiBriefcase },
+    { label: "Messages", to: "/freelancer/messages", icon: FiMessageCircle },
+    { label: "Wallet", to: "/freelancer/wallet", icon: FiCreditCard },
+    { label: "Notifications", to: "/freelancer/notifications", icon: FiBell },
+    { label: "Profile", to: "/freelancer/profile", icon: FiUser },
+    { label: "Settings", to: "/freelancer/settings", icon: FiSettings },
+  ],
+  admin: [
+    { label: "Dashboard", to: "/admin/dashboard", icon: FiGrid },
+    { label: "Users", to: "/admin/users", icon: FiUsers },
+    { label: "Tasks", to: "/admin/tasks", icon: FiBriefcase },
+    { label: "Payments", to: "/admin/payments", icon: FiCreditCard },
+    { label: "Categories", to: "/admin/categories", icon: FiInbox },
+    { label: "Reports", to: "/admin/reports", icon: FiPieChart },
+    { label: "Disputes", to: "/admin/disputes", icon: FiShield },
+    { label: "Analytics", to: "/admin/analytics", icon: FiActivity },
+    { label: "Profile", to: "/admin/profile", icon: FiUser },
+    { label: "Settings", to: "/admin/settings", icon: FiSettings },
+  ],
+};

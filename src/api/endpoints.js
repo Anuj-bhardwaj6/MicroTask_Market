@@ -1,0 +1,60 @@
+﻿export const ENDPOINTS = {
+  AUTH: {
+    REGISTER: "/auth/register",
+    LOGIN: "/auth/login",
+    LOGOUT: "/auth/logout",
+    ME: "/auth/me",
+    FORGOT_PASSWORD: "/auth/forgot-password",
+    RESET_PASSWORD: "/auth/reset-password",
+    SEND_OTP: "/auth/otp/send",
+    VERIFY_OTP: "/auth/otp/verify",
+    REFRESH_TOKEN: "/auth/refresh-token",
+  },
+  TASKS: {
+    BASE: "/tasks",
+    BY_ID: (id) => `/tasks/${id}`,
+    PUBLISH: (id) => `/tasks/${id}/publish`,
+    ARCHIVE: (id) => `/tasks/${id}/archive`,
+    STATUS: (id) => `/tasks/${id}/status`,
+    ATTACHMENTS: (id) => `/tasks/${id}/attachments`,
+    ATTACHMENT_BY_ID: (id, attachmentId) => `/tasks/${id}/attachments/${attachmentId}`,
+    BOOKMARK: (id) => `/tasks/${id}/bookmark`,
+    DASHBOARD_STATS: "/tasks/dashboard/stats",
+    DASHBOARD_INSIGHTS: "/tasks/dashboard/insights",
+    DASHBOARD_RECENT: "/tasks/dashboard/recent",
+  },
+  APPLICATIONS: {
+    BASE: "/applications",
+    BY_ID: (id) => `/applications/${id}`,
+  },
+  CHAT: {
+    CONVERSATIONS: "/chat/conversations",
+    CONVERSATION_MESSAGES: (conversationId) => `/chat/conversations/${conversationId}/messages`,
+    CONVERSATION_READ: (conversationId) => `/chat/conversations/${conversationId}/read`,
+  },
+  NOTIFICATIONS: {
+    BASE: "/notifications",
+    ACTIVITY: "/notifications/activity",
+    READ_ALL: "/notifications/read-all",
+    READ: (id) => `/notifications/${id}/read`,
+  },
+  WALLET: {
+    ME: "/wallet/me",
+    TRANSACTIONS: "/wallet/transactions",
+    RELEASE_PAYMENT: (taskId) => `/wallet/tasks/${taskId}/release-payment`,
+    PAY: (taskId) => `/wallet/tasks/${taskId}/pay`,
+    PAYMENT_STATUS: (taskId) => `/wallet/tasks/${taskId}/payment-status`,
+    REFUND: (taskId) => `/wallet/tasks/${taskId}/refund`,
+    WITHDRAW: "/wallet/withdraw",
+    WITHDRAWALS: "/wallet/withdrawals",
+    WITHDRAWAL_STATUS: (id) => `/wallet/withdrawals/${id}/status`,
+  },
+  USERS: {
+    BASE: "/users",
+    BY_ID: (id) => `/users/${id}`,
+    ME: "/users/me",
+    AVATAR: "/users/me/avatar",
+  },
+};
+
+export default ENDPOINTS;

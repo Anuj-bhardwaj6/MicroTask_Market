@@ -1,0 +1,40 @@
+
+> microtask-marketplace-frontend@1.0.0 dev
+> concurrently -n web,api -c blue,green "npm run dev:client" "npm run server"
+
+[api] 
+[api] > microtask-marketplace-frontend@1.0.0 server
+[api] > npm run dev --prefix server
+[api] 
+[web] 
+[web] > microtask-marketplace-frontend@1.0.0 dev:client
+[web] > vite --host 0.0.0.0
+[web] 
+[api] 
+[api] > microtask-marketplace-server@1.0.0 dev
+[api] > nodemon server.js
+[api] 
+[web] Port 5173 is in use, trying another one...
+[web] 
+[web]   [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m371[22m[2m[0m ms[22m
+[web] 
+[web]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+[web]   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.3.192:[1m5174[22m/[39m
+[api] [33m[nodemon] 3.1.14[39m
+[api] [33m[nodemon] to restart at any time, enter `rs`[39m
+[api] [33m[nodemon] watching path(s): *.*[39m
+[api] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[api] [32m[nodemon] starting `node server.js`[39m
+[api] [mongo] connected -> test
+[api] [server] uncaught exception: Error: listen EADDRINUSE: address already in use :::5000
+[api]     at Server.setupListenHandle [as _listen2] (node:net:1948:16)
+[api]     at listenInCluster (node:net:2005:12)
+[api]     at Server.listen (node:net:2110:7)
+[api]     at start (file:///C:/Users/Gourob%20Karmakar/Downloads/microtask-mern-payment-system/project/server/server.js:14:14)
+[api]     at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+[api]   code: 'EADDRINUSE',
+[api]   errno: -4091,
+[api]   syscall: 'listen',
+[api]   address: '::',
+[api]   port: 5000
+[api] }
