@@ -22,15 +22,15 @@ export function AuthLayout() {
   }
 
   return (
-    <main className="grid min-h-screen bg-ink-50 dark:bg-ink-950 lg:grid-cols-[1.1fr_0.9fr]">
-      <section className="flex min-h-screen flex-col justify-between px-4 py-6 sm:px-8">
+    <main className="grid min-h-screen bg-brand-50 dark:bg-ink-950 lg:grid-cols-[1.1fr_0.9fr]">
+      <section className="flex min-h-screen flex-col justify-between bg-brand-50 px-4 py-6 sm:px-8 dark:bg-ink-950">
         <Logo />
         <div className="mx-auto w-full max-w-md py-10">
           <Outlet />
         </div>
         <p className="text-sm text-ink-500">Secure authentication for clients, freelancers, and operations teams.</p>
       </section>
-      <aside className="hidden overflow-hidden border-l bg-ink-950 text-white lg:block">
+      <aside className="hidden overflow-hidden border-l border-brand-800 bg-brand-800 text-white lg:block">
         <div className="flex h-full flex-col justify-between p-10">
           <div>
             <p className="text-sm font-semibold text-brand-200">Trusted work, fast handoffs</p>
@@ -56,4 +56,5 @@ export function AuthLayout() {
     </main>
   );
 }
+
 
